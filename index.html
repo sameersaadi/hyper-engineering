@@ -12,7 +12,7 @@
     body {
       font-family: 'Baloo 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: #0a0a0a;
-      color: #e0e0e0;
+      color: #999;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -27,8 +27,7 @@
       inset: 0;
       background:
         radial-gradient(ellipse at 20% 20%, rgba(59,130,246,0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 80%, rgba(59,130,246,0.06) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 50%, rgba(59,130,246,0.04) 0%, transparent 70%);
+        radial-gradient(ellipse at 80% 80%, rgba(59,130,246,0.06) 0%, transparent 50%);
       pointer-events: none;
     }
     body::after {
@@ -43,34 +42,13 @@
     }
     .container { max-width: 700px; position: relative; z-index: 1; }
     h1 { font-size: 2.5rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; letter-spacing: -0.03em; }
-    h1 .dot { color: #3b82f6; }
-    .tagline { font-size: 1.25rem; color: #888; margin: -0.25rem 0 2rem; }
-    .description { font-size: 1rem; color: #b0b0b0; margin-bottom: 2.5rem; line-height: 1.7; }
-    .philosophy {
-      padding: 1.5rem;
-      background: rgba(59,130,246,0.05);
-      border: 1px solid rgba(59,130,246,0.15);
-      border-radius: 8px;
-    }
-    .philosophy-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .philosophy-title::before { content: ''; width: 8px; height: 8px; background: #3b82f6; border-radius: 50%; }
-    .philosophy p { color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.875rem; }
-    .philosophy p:last-child { margin-bottom: 0; }
-    .highlight { color: #e0e0e0; }
-    .cta { margin-top: 1.25rem; color: #888; }
-    .cta a { color: #3b82f6; text-decoration: none; transition: color 0.2s; }
-    .cta a:hover { color: #60a5fa; }
-    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #222; font-size: 0.875rem; }
-    footer a { color: #666; text-decoration: none; transition: color 0.2s; }
-    footer a:hover { color: #fff; }
+    .dot { color: #3b82f6; }
+    .tagline { font-size: 1.25rem; color: #666; margin-bottom: 2rem; }
+    p { margin-bottom: 1.5rem; }
+    strong { color: #fff; font-weight: 400; }
+    a { color: #3b82f6; text-decoration: none; }
+    a:hover { color: #fff; }
+    footer { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #222; color: #666; }
     @media (max-width: 600px) {
       h1 { font-size: 2rem; }
       .tagline { font-size: 1rem; }
@@ -81,14 +59,11 @@
   <div class="container">
     <h1>hyper<span class="dot">.</span>engineering</h1>
     <p class="tagline">AI-augmented consulting for the modern era</p>
-    <p class="description">We're not a traditional consultancy. We combine deep engineering expertise with AI-native workflows to help teams ship faster, smarter, and with fewer resources. When AI handles 50-60% of the execution, humans can focus on what matters: strategy, creativity, and getting things done.</p>
-    <div class="philosophy">
-      <p class="philosophy-title">Our Philosophy</p>
-      <p><span class="highlight">Human + AI collaboration, not replacement.</span> We believe the future belongs to teams that know how to work alongside AI—using it to accelerate research, automate repetitive work, and compress timelines that used to take weeks into days.</p>
-      <p><span class="highlight">Execution over endless planning.</span> Traditional consulting delivers slide decks. We deliver working systems. AI is embedded directly into our workflows, from discovery to deployment.</p>
-      <p><span class="highlight">Broad expertise, deep impact.</span> The M-shaped consultant—spanning data, AI, engineering, and leadership—outperforms narrow specialists in a world where AI can augment any single skill.</p>
-      <p class="cta">Get in touch at <a href="mailto:hello@hyper.engineering">hello@hyper.engineering</a></p>
-    </div>
+    <p>We're not a traditional consultancy. We combine deep engineering expertise with AI-native workflows to help teams ship faster, smarter, and with fewer resources.</p>
+    <p><strong>Human + AI collaboration, not replacement.</strong> We believe the future belongs to teams that know how to work alongside AI—using it to accelerate research, automate repetitive work, and compress timelines.</p>
+    <p><strong>Execution over endless planning.</strong> Traditional consulting delivers slide decks. We deliver working systems. AI is embedded directly into our workflows, from discovery to deployment.</p>
+    <p><strong>Broad expertise, deep impact.</strong> The M-shaped consultant—spanning data, AI, engineering, and leadership—outperforms narrow specialists in a world where AI can augment any single skill.</p>
+    <p>Get in touch at <a href="mailto:hello@hyper.engineering">hello@hyper.engineering</a></p>
     <footer><a href="https://hyper.engineering">&copy; 2025 Hyper Engineering</a></footer>
   </div>
 </body>
